@@ -26,10 +26,10 @@ def start(bot, trigger):
     if not trigger.group(2):
         return
 
-    if not trigger.sender.startswith('#') or \
-       (trigger.nick not in bot.ops[trigger.sender] and
-       trigger.nick not in bot.halfplus[trigger.sender]):
-        return
+#    if not trigger.sender.startswith('#') or \
+#       (trigger.nick not in bot.ops[trigger.sender] and
+#       trigger.nick not in bot.halfplus[trigger.sender]):
+#        return
     global bombs
     global sch
     target = trigger.group(2).split(' ')[0]
